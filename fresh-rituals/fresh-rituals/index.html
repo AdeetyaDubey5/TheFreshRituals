@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fresh Rituals</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="home">
+    <main class="fullscreen">
+      <div class="container">
+        <div class="logo">
+          <img src="assets/images/logo.png" class="" alt="The Fresh Rituals"/>
+        </div>
+        <div class="login-container" id="signInForm">
+          <h2 class="text-center mb-4">Sign In</h2>
+          <!-- Sign-in Form -->
+          <form action="choose-gender.html">
+            <div class="form-group position-relative">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" required />
+            </div>
+            <div class="form-group position-relative">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control"  id="password" required />
+              <i class="fas fa-eye password-icon" id="togglePassword" onclick="togglePasswordVisibility()" ></i>
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit" class="btn mt-3 login-button">Sign In</button>
+            <!-- Forgot Password Link -->
+            <div class="text-left mt-2 login-para">
+              <a href="#">Forgot Password?</a>
+            </div>
+          </form>
+
+          <!-- OR Separator -->
+          <div class="text-center mt-3 mb-3 or">
+            <span class="or-style">OR</span>
+          </div>
+
+          <!-- Google and Microsoft Login Buttons -->
+          <a href="#" class="btn google-login-btn mt-3">
+            <img src="assets/images/google.svg" width="36" height="36" alt="google Icons"/>
+            Login with Google
+          </a>
+
+          <!-- Create new account -->
+          <div class="login-para mt-3">
+            <p>
+              Don't have an account yet?
+              <a href="#" class="them-color-text" onclick="showSignUpForm()"> Sign Up Now</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Sign-up Form (Initially Hidden) -->
+        <div class="login-container" id="signUpForm" style="display: none;">
+          <h2 class="text-center mb-4">Sign Up</h2>
+          <form>
+            <div class="form-group position-relative">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="form-group position-relative">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control"  id="email" required />
+            </div>
+           
+            <div class="form-group position-relative">
+              <label for="signupPassword" class="form-label">Password</label>
+              <input type="password" class="form-control"  id="signupPassword" required />
+            </div>
+
+            <!-- Sign Up Button -->
+            <button type="submit" class="btn mt-3 login-button">Sign Up</button>
+
+            <!-- Already have an account -->
+            <div class="login-para mt-3">
+              <p>
+                Already have an account?
+                <a href="#" class="them-color-text" onclick="showSignInForm()"> Sign In</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+    
+    </script>
+  </body>
+</html>
